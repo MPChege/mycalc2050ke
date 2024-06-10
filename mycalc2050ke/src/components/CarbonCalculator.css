@@ -1,0 +1,1791 @@
+.carbon-calculator-container {
+    position: relative;
+    /* Add any container-level styles here */
+  }
+  
+  .car-animation {
+    position: absolute;
+    /* Define common animation styles for car elements */
+  }
+  
+  /* Additional styles for specific animations */
+ 
+  #car1 {
+    animation-name: car-1;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    transition: opacity 0.5s;
+    position: absolute;
+    width: 5.3vw;
+    left: 35vw;
+    top: 30.1vw;
+  }
+
+  @keyframes car-1 {
+    0% {
+      top: 20.7vw;
+      left: 4.3vw;
+    }
+
+    55% {
+      top: 30.5vw;
+      left: 36.5vw;
+    }
+
+    100% {
+      top: 38vw;
+      left: 60vw;
+    }
+  }
+
+  #electric-white {
+    animation-name: car-1;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    transition: opacity 0.5s;
+    opacity: 0;
+    position: absolute;
+    width: 5.5vw;
+    left: 34.25vw;
+    top: 29.8vw;
+  }
+
+  @keyframes car-1 {
+    0% {
+      top: 20.4vw;
+      left: 3.55vw;
+    }
+
+    55% {
+      top: 30.2vw;
+      left: 35.75vw;
+    }
+
+    100% {
+      top: 37.7vw;
+      left: 59.25vw;
+    }
+  }
+
+  #blue-lorry {
+    animation-name: bluelorry;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    transition: opacity 0.5s;
+    position: absolute;
+    width: 11.5vw;
+    left: 6vw;
+    top: 20.15vw;
+    rotate: -0.6deg;
+  }
+
+  @keyframes bluelorry {
+    0% {
+      /*opacity: 0;*/
+      top: 20vw;
+      left: 6vw;
+    }
+
+    /*10%{
+                opacity: 1;
+            }*/
+
+    50% {
+      left: 37.7vw;
+      top: 29.7vw;
+    }
+
+    100% {
+      left: 59vw;
+      top: 36.3vw;
+    }
+  }
+
+  #blue-lorry-electric {
+    animation-name: bluelorry-electric;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    transition: opacity 0.5s;
+    position: absolute;
+    width: 11.5vw;
+    rotate: -0.6deg;
+    opacity: 0;
+  }
+
+  @keyframes bluelorry-electric {
+    0% {
+      top: 20.5vw;
+      left: 6vw;
+    }
+
+    50% {
+      left: 37.1vw;
+      top: 29.8vw;
+    }
+
+    100% {
+      left: 59vw;
+      top: 36.3vw;
+    }
+  }
+
+  #red-lorry {
+    animation-name: redlorry;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    position: absolute;
+    width: 9vw;
+  }
+
+  @keyframes redlorry {
+    0% {
+      left: 59vw;
+      top: 13.2vw;
+    }
+
+    100% {
+      left: 36vw;
+      top: 6vw;
+    }
+  }
+
+  #red-lorry-electric {
+    animation-name: redlorry;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    position: absolute;
+    width: 8vw;
+    opacity: 0;
+  }
+
+  @keyframes redlorry {
+    0% {
+      left: 59vw;
+      top: 13.2vw;
+    }
+
+    100% {
+      left: 36vw;
+      top: 6vw;
+    }
+  }
+
+  #bus-right-corner {
+    animation-name: rightbus;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    position: absolute;
+    width: 9vw;
+  }
+
+  @keyframes rightbus {
+    0% {
+      left: 91vw;
+      top: 9.4vw;
+    }
+
+    100% {
+      top: 40vw;
+      left: 28vw;
+    }
+  }
+
+  #bus-right-corner-electric {
+    animation-name: rightbus;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    position: absolute;
+    width: 9vw;
+  }
+
+  @keyframes rightbus {
+    0% {
+      left: 91vw;
+      top: 9.4vw;
+    }
+
+    100% {
+      top: 40vw;
+      left: 28vw;
+    }
+  }
+
+  #parliament-parked-cars {
+    transition: opacity 1s, top 1s;
+    position: absolute;
+    width: 10vw;
+    left: 38vw;
+    top: 26.4vw;
+  }
+
+  #red-bus-on-highway {
+    animation-name: redbusonhighway;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    animation-delay: 0.5s;
+    position: absolute;
+    z-index: 30;
+    width: 9vw;
+  }
+
+  @keyframes redbusonhighway {
+    0% {
+      top: -2.9vw;
+      left: 53.55vw;
+    }
+
+    100% {
+      left: -6vw;
+      top: 26vw;
+    }
+  }
+
+  #red-bus-on-highway1-electric1 {
+    animation-name: redbusonhighway;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    animation-delay: 0.5s;
+    position: absolute;
+    z-index: 30;
+    width: 9vw;
+  }
+
+  @keyframes redbusonhighway {
+    0% {
+      top: -2.9vw;
+      left: 53.55vw;
+    }
+
+    100% {
+      left: -6vw;
+      top: 26vw;
+    }
+  }
+
+  #red-bus-on-highway1 {
+    animation-name: redbusonhighway1;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    animation-delay: 1s;
+    position: absolute;
+    z-index: 40;
+    width: 9vw;
+  }
+
+  @keyframes redbusonhighway1 {
+    0% {
+      top: -3vw;
+      left: 50vw;
+    }
+
+    100% {
+      top: 24.4vw;
+      left: -6.2vw;
+    }
+  }
+
+  #red-bus-on-highway1-electric {
+    animation-name: redbusonhighway1;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    animation-delay: 1s;
+    position: absolute;
+    z-index: 40;
+    width: 9vw;
+  }
+
+  @keyframes redbusonhighway1 {
+    0% {
+      top: -3vw;
+      left: 50vw;
+    }
+
+    100% {
+      top: 24.4vw;
+      left: -6.2vw;
+    }
+  }
+
+  #red-car-right-side {
+    animation-name: rightcar;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    animation-delay: 0.9s;
+    position: absolute;
+    width: 6.15vw;
+  }
+
+  @keyframes rightcar {
+    0% {
+      left: 93.5vw;
+      top: 9.5vw;
+    }
+
+    100% {
+      top: 39vw;
+      left: 33vw;
+    }
+  }
+
+  #red-car-right-side-electric {
+    animation-name: rightcarElectric;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    animation-delay: 0.9s;
+    position: absolute;
+    opacity: 0;
+    width: 5vw;
+  }
+
+  @keyframes rightcarElectric {
+    0% {
+      left: 95.2vw;
+      top: 9.5vw;
+    }
+
+    100% {
+      top: 39vw;
+      left: 34.2vw;
+    }
+  }
+
+  #tram {
+    animation-name: tramcar;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    transition: opacity 0.5s;
+    position: absolute;
+    width: 16vw;
+    z-index: 10;
+  }
+
+  @keyframes tramcar {
+    0% {
+      left: 54.3vw;
+      top: 17.9vw;
+    }
+
+    50% {
+      left: 29vw;
+      top: 10vw;
+    }
+
+    100% {
+      left: 54.3vw;
+      top: 17.9vw;
+    }
+  }
+
+  #greycar-next-kcc {
+    animation-name: greycar1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    transition: opacity 0.5s;
+    position: absolute;
+    width: 5.3vw;
+    z-index: 15;
+  }
+
+  @keyframes greycar1 {
+    0% {
+      left: 54vw;
+      top: 21vw;
+    }
+
+    100% {
+      left: 37vw;
+      top: 15.5vw;
+    }
+  }
+
+  #electric-blue {
+    animation-name: greycar1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    transition: opacity 0.5s;
+    opacity: 0;
+    position: absolute;
+    width: 5.3vw;
+    z-index: 15;
+  }
+
+  @keyframes greycar1 {
+    0% {
+      left: 54vw;
+      top: 21vw;
+    }
+
+    100% {
+      left: 37vw;
+      top: 15.5vw;
+    }
+  }
+
+  #second-greycar-next-kcc {
+    animation-name: secondgreycar1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    position: absolute;
+    z-index: 10;
+    width: 5.6vw;
+  }
+
+  @keyframes secondgreycar1 {
+    0% {
+      left: 37.5vw;
+      top: 14.5vw;
+    }
+
+    100% {
+      left: 51.5vw;
+      top: 19vw;
+    }
+  }
+
+  #second-greycar-next-kcc-electric {
+    animation-name: secondgreycar1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    position: absolute;
+    z-index: 10;
+    width: 5.6vw;
+    opacity: 0;
+  }
+
+  @keyframes secondgreycar1 {
+    0% {
+      left: 37.5vw;
+      top: 14.5vw;
+    }
+
+    100% {
+      left: 51.5vw;
+      top: 19vw;
+    }
+  }
+
+  #red-car-on-highway {
+    animation-name: redcarhighway;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    position: absolute;
+    z-index: 25;
+    width: 6.15vw;
+  }
+
+  @keyframes redcarhighway {
+    0% {
+      left: 53.7vw;
+      top: -1.5vw;
+    }
+
+    100% {
+      left: -4vw;
+      top: 26.5vw;
+    }
+  }
+
+  #red-car-on-highway-2 {
+    animation-name: redcarhighway2;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    position: absolute;
+    width: 6.15vw;
+    z-index: 25;
+  }
+
+  @keyframes redcarhighway2 {
+    0% {
+      left: 50.9vw;
+      top: -1.8vw;
+    }
+
+    100% {
+      left: -4vw;
+      top: 24.8vw;
+    }
+  }
+
+  #red-car-on-highway-3 {
+    animation-name: redcarhighway3;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    animation-delay: 2s;
+    position: absolute;
+    width: 6.15vw;
+    z-index: 25;
+  }
+
+  @keyframes redcarhighway3 {
+    0% {
+      left: 50.9vw;
+      top: -1.8vw;
+    }
+
+    100% {
+      left: -4vw;
+      top: 24.8vw;
+    }
+  }
+
+  #red-car-on-highway-4 {
+    animation-name: redcarhighway4;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    animation-delay: 4s;
+    position: absolute;
+    z-index: 25;
+    width: 6.15vw;
+  }
+
+  @keyframes redcarhighway4 {
+    0% {
+      left: 53.7vw;
+      top: -1.5vw;
+    }
+
+    100% {
+      left: -4vw;
+      top: 26.5vw;
+    }
+  }
+
+  #black-car-on-highway-cover-up-right-lane {
+    animation-name: redcarhighway;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    opacity: 0;
+    position: absolute;
+    z-index: 25;
+    width: 6.15vw;
+  }
+
+  @keyframes redcarhighway {
+    0% {
+      left: 53.7vw;
+      top: -1.5vw;
+    }
+
+    100% {
+      left: -4vw;
+      top: 26.5vw;
+    }
+  }
+
+  #black-car-on-highway-cover-up-right-lane1 {
+    animation-name: redcarhighway2;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    opacity: 0;
+    position: absolute;
+    width: 6.15vw;
+    z-index: 25;
+  }
+
+  @keyframes redcarhighway2 {
+    0% {
+      left: 50.9vw;
+      top: -1.8vw;
+    }
+
+    100% {
+      left: -4vw;
+      top: 24.8vw;
+    }
+  }
+
+  #black-car-on-highway-cover-up-right-lane2 {
+    animation-name: redcarhighway3;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    opacity: 0;
+    animation-delay: 2s;
+    position: absolute;
+    width: 6.15vw;
+    z-index: 25;
+  }
+
+  @keyframes redcarhighway3 {
+    0% {
+      left: 50.9vw;
+      top: -1.8vw;
+    }
+
+    100% {
+      left: -4vw;
+      top: 24.8vw;
+    }
+  }
+
+  #black-car-on-highway-cover-up-right-lane3 {
+    animation-name: redcarhighway4;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    opacity: 0;
+    animation-delay: 4s;
+    position: absolute;
+    z-index: 25;
+    width: 6.15vw;
+  }
+
+  @keyframes redcarhighway4 {
+    0% {
+      left: 53.7vw;
+      top: -1.5vw;
+    }
+
+    100% {
+      left: -4vw;
+      top: 26.5vw;
+    }
+  }
+
+  #green-small-car-on-highway-cover-up-right-lane {
+    animation-name: redcarhighway;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    opacity: 0;
+    position: absolute;
+    z-index: 25;
+    width: 6.15vw;
+  }
+
+  @keyframes redcarhighway {
+    0% {
+      left: 53.7vw;
+      top: -1.5vw;
+    }
+
+    100% {
+      left: -4vw;
+      top: 26.5vw;
+    }
+  }
+
+  #green-small-car-on-highway-cover-up-right-lane1 {
+    animation-name: redcarhighway2;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    opacity: 0;
+    position: absolute;
+    width: 6.15vw;
+    z-index: 25;
+  }
+
+  @keyframes redcarhighway2 {
+    0% {
+      left: 50.9vw;
+      top: -1.8vw;
+    }
+
+    100% {
+      left: -4vw;
+      top: 24.8vw;
+    }
+  }
+
+  #green-small-car-on-highway-cover-up-right-lane2 {
+    animation-name: redcarhighway3;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    opacity: 0;
+    animation-delay: 2s;
+    position: absolute;
+    width: 6.15vw;
+    z-index: 25;
+  }
+
+  @keyframes redcarhighway3 {
+    0% {
+      left: 50.9vw;
+      top: -1.8vw;
+    }
+
+    100% {
+      left: -4vw;
+      top: 24.8vw;
+    }
+  }
+
+  #green-small-car-on-highway-cover-up-right-lane3 {
+    animation-name: redcarhighway4;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    opacity: 0;
+    animation-delay: 4s;
+    position: absolute;
+    z-index: 25;
+    width: 6.15vw;
+  }
+
+  @keyframes redcarhighway4 {
+    0% {
+      left: 53.7vw;
+      top: -1.5vw;
+    }
+
+    100% {
+      left: -4vw;
+      top: 26.5vw;
+    }
+  }
+
+  #left-train {
+    animation-name: lefttrain;
+    animation-duration: 17s;
+    animation-iteration-count: infinite;
+    transition: opacity 0.8s;
+    z-index: 40;
+    position: absolute;
+    width: 40vw;
+  }
+
+  @keyframes lefttrain {
+    0% {
+      left: -36vw;
+      top: 13vw;
+    }
+
+    50% {
+      left: -10.9vw;
+      top: 1vw;
+    }
+
+    100% {
+      left: -36vw;
+      top: 13vw;
+    }
+  }
+
+  #right-train {
+    animation-name: righttrain;
+    animation-duration: 17s;
+    animation-iteration-count: infinite;
+    transition: opacity 0.5s;
+    position: absolute;
+    z-index: 30;
+    width: 40vw;
+  }
+
+  @keyframes righttrain {
+    0% {
+      left: 22vw;
+      top: -11.5vw;
+    }
+
+    50% {
+      left: -10vw;
+      top: 4vw;
+    }
+
+    100% {
+      left: -31vw;
+      top: 14.1vw;
+    }
+  }
+
+  #plane {
+    animation-name: KQplane;
+    animation-duration: 24s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    position: absolute;
+    width: 22.5vw;
+    z-index: 50;
+  }
+
+  @keyframes KQplane {
+    0% {
+      /*opacity: 0;*/
+      left: -16vw;
+      top: 2vw;
+    }
+
+    /*3%{
+                opacity: 1;
+            }*/
+
+    50% {
+      left: 77vw;
+      top: 35vw;
+    }
+
+    100% {
+      left: 77vw;
+      top: 35vw;
+    }
+  }
+
+  #blue-bus-on-highway {
+    animation-name: highwaybus;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    position: absolute;
+    z-index: 40;
+    width: 9vw;
+  }
+
+  @keyframes highwaybus {
+    0% {
+      top: 20.6vw;
+      left: -6.2vw;
+    }
+
+    100% {
+      top: -3vw;
+      left: 42.5vw;
+    }
+  }
+
+  #results-button-style-data {
+    position: absolute;
+    width: 6.5vw;
+    height: 4vw;
+    left: 91vw;
+    top: 35.5vw;
+    background-color: #f0a800;
+    border-radius: 4%;
+    border-style: solid;
+    border-color: white;
+    border-width: 0.15vw;
+  }
+
+  #results-button-text-style {
+    position: absolute;
+    width: 3.1vw;
+    top: 36vw;
+    left: 92.7vw;
+    font-family: "Helvetica", sans-serif;
+    font-size: 0.8vw;
+    font-weight: normal;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  #greenLorry {
+    animation-name: greenlorry;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    position: absolute;
+    width: 8.5vw;
+  }
+
+  @keyframes greenlorry {
+    0% {
+      left: 53vw;
+      top: 36.3vw;
+    }
+
+    100% {
+      left: 0;
+      top: 20.3vw;
+    }
+  }
+
+  #green-lorry-electric {
+    animation-name: greenlorry;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    position: absolute;
+    width: 8.5vw;
+    opacity: 0;
+  }
+
+  @keyframes greenlorry {
+    0% {
+      left: 53vw;
+      top: 36vw;
+    }
+
+    100% {
+      left: 0;
+      top: 20vw;
+    }
+  }
+
+  #black-car-on-highway {
+    animation-name: blackcar;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    animation-delay: 0.8s;
+    position: absolute;
+    z-index: 40;
+    width: 6.15vw;
+  }
+
+  @keyframes blackcar {
+    0% {
+      top: 21vw;
+      left: -4vw;
+    }
+
+    100% {
+      left: 43.5vw;
+      top: -2vw;
+    }
+  }
+
+  #green-small-car-on-highway-cover-up {
+    animation-name: blackcar;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    animation-delay: 0.8s;
+    position: absolute;
+    opacity: 0;
+    z-index: 40;
+    width: 6.15vw;
+  }
+
+  @keyframes blackcar {
+    0% {
+      top: 21vw;
+      left: -4vw;
+    }
+
+    100% {
+      left: 43.5vw;
+      top: -2vw;
+    }
+  }
+
+  #black-car-on-highway1 {
+    animation-name: blackcar1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    animation-delay: 2s;
+    position: absolute;
+    z-index: 40;
+    width: 6.15vw;
+  }
+
+  @keyframes blackcar1 {
+    0% {
+      top: 21vw;
+      left: -4vw;
+    }
+
+    100% {
+      left: 43.5vw;
+      top: -2vw;
+    }
+  }
+
+  #green-small-car-on-highway-cover-up1 {
+    animation-name: blackcar1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    animation-delay: 2s;
+    position: absolute;
+    opacity: 0;
+    z-index: 40;
+    width: 6.15vw;
+  }
+
+  @keyframes blackcar1 {
+    0% {
+      top: 21vw;
+      left: -4vw;
+    }
+
+    100% {
+      left: 43.5vw;
+      top: -2vw;
+    }
+  }
+
+  #green-small-car-on-highway {
+    animation-name: greenhighwaycar;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    animation-delay: 1.3s;
+    position: absolute;
+    z-index: 40;
+    width: 6.15vw;
+  }
+
+  @keyframes greenhighwaycar {
+    0% {
+      left: -4vw;
+      top: 21.1vw;
+    }
+
+    100% {
+      left: 43.4vw;
+      top: -1.8vw;
+    }
+  }
+
+  #green-small-car-on-highway-cover-up3 {
+    animation-name: greenhighwaycar;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    animation-delay: 1.3s;
+    position: absolute;
+    z-index: 40;
+    width: 6.15vw;
+    opacity: 0;
+  }
+
+  @keyframes greenhighwaycar {
+    0% {
+      left: -4vw;
+      top: 21.1vw;
+    }
+
+    100% {
+      left: 43.4vw;
+      top: -1.8vw;
+    }
+  }
+
+  #green-small-car-on-highway1 {
+    animation-name: greenhighwaycar1;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    animation-delay: 1.3s;
+    position: absolute;
+    width: 6.15vw;
+    z-index: 40;
+  }
+
+  @keyframes greenhighwaycar1 {
+    0% {
+      left: -3.6vw;
+      top: 22.6vw;
+    }
+
+    100% {
+      left: 47.1vw;
+      top: -2vw;
+    }
+  }
+
+  #green-small-car-on-highway-cover-up4 {
+    animation-name: greenhighwaycar1;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    animation-delay: 1.3s;
+    position: absolute;
+    width: 6.15vw;
+    z-index: 40;
+    opacity: 0;
+  }
+
+  @keyframes greenhighwaycar1 {
+    0% {
+      left: -3.6vw;
+      top: 22.6vw;
+    }
+
+    100% {
+      left: 47.1vw;
+      top: -2vw;
+    }
+  }
+
+  #black-car-on-highway-cover-up {
+    animation-name: greenhighwaycar1;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    animation-delay: 1.3s;
+    position: absolute;
+    width: 6.15vw;
+    z-index: 40;
+    opacity: 0;
+  }
+
+  @keyframes greenhighwaycar1 {
+    0% {
+      left: -3.6vw;
+      top: 22.6vw;
+    }
+
+    100% {
+      left: 47.1vw;
+      top: -2vw;
+    }
+  }
+
+  #black-car-on-highway-cover-up1 {
+    animation-name: greenhighwaycar;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    animation-delay: 1.3s;
+    position: absolute;
+    z-index: 40;
+    width: 6.15vw;
+    opacity: 0;
+  }
+
+  @keyframes greenhighwaycar {
+    0% {
+      left: -4vw;
+      top: 21.1vw;
+    }
+
+    100% {
+      left: 43.4vw;
+      top: -1.8vw;
+    }
+  }
+
+  #plane-above-station {
+    animation-name: plane-abv-station;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 0.5s;
+    position: absolute;
+    z-index: 110;
+    width: 24vw;
+  }
+
+  @keyframes plane-abv-station {
+    0% {
+      left: 16vw;
+      top: -7vw;
+    }
+
+    50% {
+      left: -19vw;
+      top: 7vw;
+    }
+
+    100% {
+      left: -19vw;
+      top: 7vw;
+    }
+  }
+
+  #smoke-level-1-1 {
+    animation-name: smoke-up;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    transition: display 0.5s;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 45;
+  }
+
+  @keyframes smoke-up {
+    0% {
+      width: 0.3vw;
+      height: 0.3vw;
+      top: 24vw;
+      left: 26.45vw;
+      opacity: 0.8;
+    }
+
+    100% {
+      width: 8vw;
+      height: 8vw;
+      top: 7vw;
+      left: 23vw;
+      opacity: 0;
+    }
+  }
+
+  #smoke-level-1-2 {
+    animation-name: smoke-up-1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    transition: display 0.5s;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 45;
+  }
+
+  @keyframes smoke-up-1 {
+    0% {
+      width: 0.3vw;
+      height: 0.3vw;
+      top: 24vw;
+      left: 26.45vw;
+      opacity: 0.8;
+    }
+
+    100% {
+      width: 9vw;
+      height: 9vw;
+      top: 7vw;
+      left: 26.45vw;
+      opacity: 0;
+    }
+  }
+
+  #smoke-level-1-3 {
+    animation-name: smoke-up-2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    transition: display 0.5s;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 45;
+  }
+
+  @keyframes smoke-up-2 {
+    0% {
+      width: 0.3vw;
+      height: 0.3vw;
+      top: 24vw;
+      left: 26.45vw;
+      opacity: 0.8;
+    }
+
+    100% {
+      width: 6vw;
+      height: 6vw;
+      top: 6vw;
+      left: 23vw;
+      opacity: 0;
+    }
+  }
+
+  #smoke-level-1-1-chimney-2 {
+    animation-name: smoke-up-2-chimney;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    transition: display 0.5s;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 45;
+  }
+
+  @keyframes smoke-up-2-chimney {
+    0% {
+      width: 0.3vw;
+      height: 0.3vw;
+      top: 24vw;
+      left: 25.15vw;
+      opacity: 0.8;
+    }
+
+    100% {
+      width: 6vw;
+      height: 6vw;
+      top: 6vw;
+      left: 23vw;
+      opacity: 0;
+    }
+  }
+
+  #smoke-level-1-1-chimney-3 {
+    animation-name: smoke-up-3-chimney;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    transition: display 0.5s;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 45;
+  }
+
+  @keyframes smoke-up-3-chimney {
+    0% {
+      width: 0.3vw;
+      height: 0.3vw;
+      top: 23.7vw;
+      left: 23.85vw;
+      opacity: 0.8;
+    }
+
+    100% {
+      width: 6vw;
+      height: 6vw;
+      top: 7vw;
+      left: 21vw;
+      opacity: 0;
+    }
+  }
+
+  #power-bubble-lvl-1 {
+    animation-name: power-rolling;
+    animation-duration: 2.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: opacity 1s;
+  }
+
+  #power-bubble-lvl-2 {
+    animation-name: power-rolling;
+    animation-duration: 2.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0.15s;
+    transition: opacity 1s;
+  }
+
+  #power-bubble-lvl-3 {
+    animation-name: power-rolling;
+    animation-duration: 2.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0.3s;
+    transition: opacity 1s;
+  }
+
+  #power-bubble-lvl-4 {
+    animation-name: power-rolling;
+    animation-duration: 2.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0.45s;
+    transition: opacity 1s;
+  }
+
+  @keyframes power-rolling {
+    0% {
+      left: 95vw;
+      top: 11.45vw;
+    }
+
+    90% {
+      width: 0.6vw;
+      height: 0.6vw;
+    }
+
+    100% {
+      left: 80.75vw;
+      top: 1.65vw;
+      width: 0vw;
+      height: 0vw;
+    }
+  }
+
+  #geo-power-bubble-lvl-1 {
+    animation-name: geo-power-rolling;
+    animation-duration: 2.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    border-radius: 50%;
+    background-color: lightskyblue;
+    transition: opacity 1s;
+    z-index: 20;
+  }
+
+  #geo-power-bubble-lvl-2 {
+    animation-name: geo-power-rolling;
+    animation-duration: 2.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0.15s;
+    position: absolute;
+    border-radius: 50%;
+    background-color: lightskyblue;
+    transition: opacity 1s;
+    z-index: 20;
+  }
+
+  #geo-power-bubble-lvl-3 {
+    animation-name: geo-power-rolling;
+    animation-duration: 2.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0.3s;
+    position: absolute;
+    border-radius: 50%;
+    background-color: lightskyblue;
+    transition: opacity 1s;
+    z-index: 20;
+  }
+
+  #geo-power-bubble-lvl-4 {
+    animation-name: geo-power-rolling;
+    animation-duration: 2.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0.45s;
+    position: absolute;
+    border-radius: 50%;
+    background-color: lightskyblue;
+    transition: opacity 1s;
+    z-index: 20;
+  }
+
+  @keyframes geo-power-rolling {
+    0% {
+      left: 72.6vw;
+      top: 12.5vw;
+    }
+
+    90% {
+      width: 0.6vw;
+      height: 0.6vw;
+    }
+
+    100% {
+      left: 80.75vw;
+      top: 1.75vw;
+      width: 0vw;
+      height: 0vw;
+    }
+  }
+
+  #nuclear-power-bubble-lvl-1 {
+    animation-name: nuclear-power-rolling;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    border-radius: 50%;
+    background-color: lightskyblue;
+    z-index: 20;
+  }
+
+  #nuclear-power-bubble-lvl-2 {
+    animation-name: nuclear-power-rolling;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0.15s;
+    position: absolute;
+    border-radius: 50%;
+    background-color: lightskyblue;
+    z-index: 20;
+  }
+
+  #nuclear-power-bubble-lvl-3 {
+    animation-name: nuclear-power-rolling;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0.3s;
+    position: absolute;
+    border-radius: 50%;
+    background-color: lightskyblue;
+    z-index: 20;
+  }
+
+  #nuclear-power-bubble-lvl-4 {
+    animation-name: nuclear-power-rolling;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0.45s;
+    position: absolute;
+    border-radius: 50%;
+    background-color: lightskyblue;
+    z-index: 20;
+  }
+
+  @keyframes nuclear-power-rolling {
+    0% {
+      left: 58vw;
+      top: 1.43vw;
+    }
+
+    90% {
+      width: 0.6vw;
+      height: 0.6vw;
+    }
+
+    100% {
+      left: 81.5vw;
+      top: 1.95vw;
+      width: 0vw;
+      height: 0vw;
+    }
+  }
+
+  #turbine-blades {
+    animation-name: turbine-rolling;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes turbine-rolling {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  #geothermal-smoke {
+    animation-name: geo-smoke;
+    animation-duration: 4.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes geo-smoke {
+    0% {
+      top: 1vw;
+    }
+
+    50% {
+      opacity: 0.5;
+    }
+
+    100% {
+      top: -6vw;
+      opacity: 0;
+    }
+  }
+
+  #nuclear-smoke {
+    animation-name: nuclar-smoke;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0.7s;
+  }
+
+  @keyframes nuclar-smoke {
+    0% {
+      top: -1vw;
+    }
+
+    100% {
+      top: -5vw;
+      opacity: 0;
+    }
+  }
+
+  #nuclear-lvl-1 {
+    transition: opacity 1s;
+  }
+
+  #nuclear-lvl-2 {
+    transition: opacity 1s;
+  }
+
+  #nuclear-lvl-3 {
+    transition: opacity 1s;
+  }
+
+  #nuclear-lvl-4 {
+    transition: opacity 1s;
+  }
+
+  #geo-lvl-4 {
+    transition: opacity 1s;
+  }
+
+  #geo-lvl-3 {
+    transition: opacity 1s;
+  }
+
+  #geo-lvl-2 {
+    transition: opacity 1s;
+  }
+
+  #geo-lvl-1 {
+    transition: opacity 1s;
+  }
+
+  #hep-lvl-4 {
+    transition: opacity 1s;
+  }
+
+  #hep-lvl-3 {
+    transition: opacity 1s;
+  }
+
+  #hep-lvl-2 {
+    transition: opacity 1s;
+  }
+
+  #turbine-1 {
+    transition: opacity 1s;
+  }
+
+  #turbine-2 {
+    transition: opacity 1s;
+  }
+
+  #turbine-3 {
+    transition: opacity 1s;
+  }
+
+  #turbine-4 {
+    transition: opacity 1s;
+  }
+
+  #geo-powerline {
+    transition: opacity 1s;
+  }
+
+  #nuc-powerline {
+    transition: opacity 1s;
+  }
+
+  #hep-powerline {
+    transition: opacity 1s;
+  }
+
+  #house-appliances-lv1 {
+    transition: opacity 0.5s;
+  }
+
+  #house-appliances-lv2 {
+    transition: opacity 0.5s;
+  }
+
+  #house-appliances-lv3 {
+    transition: opacity 0.5s;
+  }
+
+  #house-appliances-lv4 {
+    transition: opacity 0.5s;
+  }
+
+  .slider {
+    -webkit-appearance: none;
+    width: 6.65vw;
+    height: 0.9vw;
+    border-radius: 0.25vw;
+    background: #ffffff;
+    cursor: pointer;
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.55vw;
+    height: 1.55vw;
+    border-radius: 50%;
+    background: #f0a800;
+    border: 0.1vw solid white;
+    cursor: pointer;
+  }
+
+  .slider::-moz-range-thumb {
+    width: 1.55vw;
+    height: 1.55vw;
+    border-radius: 50%;
+    background: #f0a800;
+    cursor: pointer;
+  }
+  .animation-container {
+    position: relative;
+  }
+  
+  .background-image {
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    z-index: 0;
+  }
+  
+  .vehicles-container {
+    position: relative; /* Ensure child elements are positioned relative to this container */
+  }
+  
+  .buildings-container {
+    position: relative; /* Ensure child elements are positioned relative to this container */
+  }
+  
+  /* Define specific styles for individual elements as needed */
+  .building {
+    position: absolute;
+    left: 3.4vw;
+    top: 0.7vw;
+    width: 95vw;
+    z-index: 0;
+  }
+  
+  .background-image img,
+  .building img,
+  .vehicles-container img {
+    width: 100%; /* Ensure images fill their respective containers */
+  }
+  #parliament-parked-cars {
+    position: absolute;
+    left: 10vw;
+    top: 10vh;
+    width: 20vw;
+    z-index: 50; /* Ensure this value is higher than other overlapping elements */
+  }
+  
