@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="180" height="73" viewBox="0 0 180 73">
-  <g id="Rectangle_29" data-name="Rectangle 29" fill="#f0a800" stroke="#fff" stroke-width="3">
-    <rect width="180" height="73" rx="10" stroke="none"/>
-    <rect x="1.5" y="1.5" width="177" height="70" rx="8.5" fill="none"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="73" viewBox="0 0 180 73"><g id="Rectangle_29" fill="#f0a800" stroke="#fff" stroke-width="3" data-name="Rectangle 29"><rect width="180" height="73" stroke="none" rx="10"/><rect width="177" height="70" x="1.5" y="1.5" fill="none" rx="8.5"/></g></svg>

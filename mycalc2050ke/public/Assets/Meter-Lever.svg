@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="42" height="364" viewBox="0 0 42 364">
-  <g id="Rectangle_26" data-name="Rectangle 26" fill="#fff" stroke="#000" stroke-width="2">
-    <rect width="42" height="364" rx="5" stroke="none"/>
-    <rect x="1" y="1" width="40" height="362" rx="4" fill="none"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="364" viewBox="0 0 42 364"><g id="Rectangle_26" fill="#fff" stroke="#000" stroke-width="2" data-name="Rectangle 26"><rect width="42" height="364" stroke="none" rx="5"/><rect width="40" height="362" x="1" y="1" fill="none" rx="4"/></g></svg>
