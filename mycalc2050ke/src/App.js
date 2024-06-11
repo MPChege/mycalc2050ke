@@ -23,7 +23,7 @@ import NuclearInfoPage from './components/NuclearInfoPage';
 import ResultsPage from './components/ResultsPage';
 import SolarInfoPage from './components/SolarInfoPage';
 import TravelDemandInfoPage from './components/TravelDemandInfoPage.js';
-// import WaveTidalInfoPage from './components/WaveTidalInfoPage';
+import WaveTidalInfoPage from './components/WaveTidalInfoPage';
 import WindInfoPage from './components/WindInfoPage.js';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 

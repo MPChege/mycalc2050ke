@@ -1,9 +1,111 @@
 
-import React from 'react';
+// import React from 'react';
 import { Link } from 'react-router-dom';
-// import WebSocketComponent from './WebSocketComponent';
+import React, { useEffect, useState } from "react";
 
 const CarbonCalculator = () => {
+
+  const [websocket, setWebsocket] = useState(null);
+    const [electricityCurrentVal, setElectricityCurrentVal] = useState(0);
+    const [hydrogenCurrentVal, setHydrogenCurrentVal] = useState(0);
+    const [otherEnergyCurrentVal, setOtherEnergyCurrentVal] = useState(0);
+    const [wasteManagementCurrentVal, setWasteManagementCurrentVal] = useState(0);
+    const [agricultureCurrentVal, setAgricultureCurrentVal] = useState(0);
+    const [industryCurrentVal, setIndustryCurrentVal] = useState(0);
+    const [buildingResidentialCurrentVal, setBuildingResidentialCurrentVal] = useState(0);
+    const [buildingNonResidentialCurrentVal, setBuildingNonResidentialCurrentVal] = useState(0);
+    const [transportDomesticCurrentVal, setTransportDomesticCurrentVal] = useState(0);
+    const [transportInternationalCurrentVal, setTransportInternationalCurrentVal] = useState(0);
+    const [totalEmmissionsCurrentVal, setTotalEmmissionsCurrentVal] = useState(0);
+    const [firstLoad, setFirstLoad] = useState(true);
+    const [resultShow, setResultShow] = useState(0);
+
+    useEffect(() => {
+        const wsUrl = "wss://kcert.ilabafrica.ac.ke/_/ws/?s=429604ac2c1f3440be301977c504df08cefeb66b053ad6572b8e6108fbfc8870=ZXWN3HQNAOLDFZNWDKLAFUH2UONHYU24TYHRVFMIEZKPXFKO";
+
+        const websocket = new WebSocket(wsUrl);
+        const getInitValueWb = () => {
+          // Implement logic for getInitValueWb
+          console.log("Initial value from WebSocket fetched.");
+      };
+  
+      const getValueWb = () => {
+          // Implement logic for getValueWb
+          console.log("Value from WebSocket fetched.");
+      };
+
+        websocket.onmessage = (event) => {
+            console.log("Message received:", event.data);
+            // Update state variables with received data
+        };
+
+        websocket.onerror = (error) => {
+            console.error("WebSocket Error:", error);
+        };
+
+        websocket.onclose = (event) => {
+            if (event.wasClean) {
+                console.log("WebSocket closed cleanly.");
+            } else {
+                console.error("WebSocket connection died.");
+                // Reconnect logic if needed
+            }
+        };
+
+        return () => {
+            websocket.close();
+        };
+    }, []);
+
+    const goToResults = () => {
+      window.location.href =
+      "results-page.html?" +
+      "electricity_current_val=" +
+      electricityCurrentVal +
+      "&hydrogen_current_val =" +
+      hydrogenCurrentVal +
+      "&other_energy_current_val=" +
+      otherEnergyCurrentVal +
+      "&waste_management_current_val=" +
+      wasteManagementCurrentVal +
+      "&agriculture_current_val=" +
+      agricultureCurrentVal +
+      "&industry_current_val=" +
+      industryCurrentVal +
+      "&building_residential_current_val=" +
+      buildingResidentialCurrentVal +
+      "&building_non_residential_current_val=" +
+      buildingNonResidentialCurrentVal +
+      "&transport_domestic_current_val=" +
+      transportDomesticCurrentVal +
+      "&transport_international_current_val=" +
+      transportInternationalCurrentVal +
+      "&total_emmissions_current_val=" +
+      totalEmmissionsCurrentVal +
+      "&electricity_val=" +
+      electricityCurrentVal +
+      "&hydrogen_val=" +
+      hydrogenCurrentVal +
+      "&other_energy_val=" +
+      otherEnergyCurrentVal +
+      "&waste_management_val=" +
+      wasteManagementCurrentVal +
+      "&agriculture_val=" +
+      agricultureCurrentVal +
+      "&industry_val=" +
+      industryCurrentVal +
+      "&building_residential_val=" +
+      buildingResidentialCurrentVal +
+      "&building_non_residential_val=" +
+      buildingNonResidentialCurrentVal +
+      "&transport_domestic_val=" +
+      transportDomesticCurrentVal +
+      "&transport_international_val=" +
+      transportInternationalCurrentVal +
+      "&total_emmissions_val=" +
+      totalEmmissionsCurrentVal;
+  };
+
 
   const closeFloatingCard1 = () => {
     // Define logic to close floating card 1
@@ -29,7 +131,7 @@ const CarbonCalculator = () => {
     // Define logic to close floating card 4
     console.log('Closing Floating Card 4');
   };
-  return (
+    return (
     <>
   <meta charSet="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -3828,7 +3930,6 @@ const CarbonCalculator = () => {
     </div>
   </div> */}
 </>
-
  );
 };
 
